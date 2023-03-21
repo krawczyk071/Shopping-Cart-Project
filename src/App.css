@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  background: #facc15;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+}
+#root {
+  flex: 1;
+  display: flex;
+}
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: #dc2626;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  background: silver;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo--photo {
+  width: 50%;
+}
+nav {
+  background: white;
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+.menu {
+  list-style: none;
+  background: gray;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.menu--item {
+  display: inline;
+  margin: 1.5rem;
+}
+.menu--item:hover {
+  text-decoration: underline;
+  /* font-size: 1.5rem; */
+}
+main {
+  background: white;
+  flex: 1;
+  width: 900px;
+  align-self: center;
+  padding: 1rem;
+}
+footer {
+  background: #b91c1c;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.3rem;
+}
+.products {
+  /* background-color: gray; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.card {
+  background: white;
+  border: solid black 2px;
+  border-radius: 5px;
+  width: calc(33.33333% - 15px * 2 / 3);
+  display: flex;
+  flex-direction: column;
+}
+.card--image {
+  /* background: silver; */
+  border-bottom: solid 2px silver;
+}
+.card--photo {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+.card--text {
+  padding: 0.3rem 1rem;
+}
+.card--price {
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.btn {
+  padding: 0.5rem;
+  margin: 0.5rem 1rem 1rem 1rem;
+  border-radius: 5px;
+  background: #dc2626;
+  color: white;
+  border: 0;
+}
+.card .btn:hover {
+  background-color: #b91c1c;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+.hero--text {
+  padding: 2rem;
+  flex: 1;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  width: 40%;
+}
+.hero--image {
+  flex: 0 0 70%;
+  padding: 10px;
+}
+.hero--photo {
+  height: 180px;
+}
+.hero--btn {
+  flex: 0 0 30%;
+  /* background: silver; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  color: #b91c1c;
+  transition: all 0.5s;
+}
+.hero--btn:hover {
+  font-size: 3.5rem;
+}
+.cart {
+  background: silver;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.cart--title {
+  font-weight: bold;
+  margin: 1rem 2rem 0.5rem 2rem;
+}
+.cart--price {
+  font-weight: bold;
+  margin: 0.4rem 2rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.cart--prods {
+  background: white;
+  margin: 0.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid silver 1px;
+}
+.cart--btn__one {
+  background: #facc15;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0;
+}
+.cart--btn__two {
+  font-style: italic;
+}
+.prod {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+.prod--img {
+  flex-basis: 100%;
+  height: 120px;
+  background: yellow;
+}
+.prod--photo {
+  /* display: block;
+  margin: auto; */
+  height: 100%;
+}
+.prod--name {
+  flex: 0;
+  flex-basis: 25%;
+}
+.prod--price {
+  flex: 0;
+  flex-basis: 25%;
+}
+.prod--qty {
+  flex: 0;
+  flex-basis: 30%;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 1rem; */
+}
+.qty--btn {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #dc2626;
+  color: white;
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+.qty--text {
+  font-size: 1rem;
+}
