@@ -11,9 +11,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-
   display: flex;
-
   background: #facc15;
 }
 
@@ -24,6 +22,11 @@ body * {
   flex: 1;
   display: flex;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .App {
   flex: 1;
   display: flex;
@@ -38,7 +41,7 @@ header {
   justify-content: center;
 }
 .logo {
-  background: silver;
+  /* background: silver; */
   flex: 1;
   display: flex;
   align-items: center;
@@ -48,14 +51,14 @@ header {
   width: 50%;
 }
 nav {
-  background: white;
+  /* background: white; */
   display: flex;
   width: 900px;
   justify-content: space-between;
 }
 .menu {
   list-style: none;
-  background: gray;
+  /* background: gray; */
   margin: 0;
   padding: 2rem;
   display: flex;
@@ -72,14 +75,16 @@ nav {
   /* font-size: 1.5rem; */
 }
 main {
-  background: white;
+  /* background: white; */
   flex: 1;
   width: 900px;
   align-self: center;
-  padding: 1rem;
+  /* padding: 1rem; */
+  display: flex;
 }
 footer {
   background: #b91c1c;
+  color: white;
   font-size: 0.7rem;
   text-align: center;
   padding: 0.3rem;
@@ -89,6 +94,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin: 1rem 0;
 }
 .card {
   background: white;
@@ -105,7 +111,8 @@ footer {
 .card--photo {
   display: block;
   margin: auto;
-  width: 60%;
+  /* width: 60%; */
+  max-height: 230px;
 }
 .card--text {
   padding: 0.3rem 1rem;
@@ -127,18 +134,24 @@ footer {
   background-color: #b91c1c;
 }
 section {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2rem;
 }
+/* .splash{
+  display: flex,
+  
+} */
 .hero {
+  background: #ffe169;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 300px;
+  height: 350px;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   width: 600px;
   border: solid black 1px;
   border-radius: 10px;
@@ -152,14 +165,17 @@ section {
   width: 40%;
 }
 .hero--image {
-  flex: 0 0 70%;
-  padding: 10px;
+  flex: 0 0 75%;
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero--photo {
   height: 180px;
 }
 .hero--btn {
-  flex: 0 0 30%;
+  flex: 0 0 25%;
   /* background: silver; */
   display: flex;
   align-items: center;
@@ -167,17 +183,21 @@ section {
   font-weight: 900;
   font-style: italic;
   font-size: 3rem;
-  color: #b91c1c;
   transition: all 0.5s;
+  padding-bottom: 1rem;
+}
+.hero--btn a {
+  color: #b91c1c;
 }
 .hero--btn:hover {
   font-size: 3.5rem;
 }
 .cart {
-  background: silver;
+  background: #ffe169;
   width: 450px;
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
 }
 .cart--title {
   font-weight: bold;
@@ -191,7 +211,7 @@ section {
 }
 .cart--prods {
   background: white;
-  margin: 0.5rem 3rem;
+  margin: 0rem 3rem;
   display: flex;
   flex-direction: column;
   border-bottom: solid silver 1px;
@@ -216,16 +236,20 @@ section {
 .prod--img {
   flex-basis: 100%;
   height: 120px;
-  background: yellow;
+  width: 50%;
+  /* background: yellow; */
 }
 .prod--photo {
-  /* display: block;
-  margin: auto; */
+  display: block;
+  margin: auto;
+  padding: 10px;
   height: 100%;
 }
 .prod--name {
   flex: 0;
+  width: 50%;
   flex-basis: 25%;
+  text-align: center;
 }
 .prod--price {
   flex: 0;

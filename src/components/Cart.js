@@ -30,12 +30,14 @@ export default function Cart(props) {
   }
 
   return (
-    <div className="cart">
-      <h2 className="cart--title">Your shopping cart</h2>
-      {products}
-      <h3 className="cart--price">TOTAL {formatPrice(total())}</h3>
-      <button className="btn cart--btn__one">Checkout</button>
-      <button className="btn cart--btn__two">Back</button>
-    </div>
+    <section>
+      <div className="cart">
+        <h2 className="cart--title">Your shopping cart</h2>
+        {products}
+        <h3 className="cart--price">TOTAL {formatPrice(total())}</h3>
+        <button className="btn cart--btn__one">Checkout</button>
+        <button className="btn cart--btn__two">Back</button>
+      </div>
+    </section>
   );
 }

@@ -10,7 +10,7 @@ export default function Layout(props) {
       <main>
         <Outlet />
       </main>
-      <footer>ODIN</footer>
+      <footer>Szymon Krawczyk 2023 | Odin project</footer>
     </div>
   );
 }
